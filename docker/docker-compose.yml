@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # AI訓練Agent服務
+  training-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-training:latest
+    container_name: ai-training-agent
+    volumes:
+      - ./logs:/logs
+      - /var/run/docker.sock:/var/run/docker.sock  # 允許容器內訪問Docker
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - training-network
+    restart: unless-stopped
+
+  # API服務
+  api-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: training-api:latest
+    container_name: training-api-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - training-agent
+    networks:
+      - training-network
+    restart: unless-stopped
+
+networks:
+  training-network:
+    driver: bridge
+
+volumes:
+  logs:
+    driver: local

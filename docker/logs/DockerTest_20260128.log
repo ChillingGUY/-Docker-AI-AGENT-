@@ -1,0 +1,643 @@
+2026-01-28 20:16:55 - DockerTest - INFO - [test_docker.py:125] - ============================================================
+2026-01-28 20:16:55 - DockerTest - INFO - [test_docker.py:126] - Docker Test Suite
+2026-01-28 20:16:55 - DockerTest - INFO - [test_docker.py:127] - ============================================================
+2026-01-28 20:16:55 - DockerTest - INFO - [test_docker.py:138] - 
+[Docker Connection]
+2026-01-28 20:16:55 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 20:16:55 - DockerTest - ERROR - [test_docker.py:23] - ✗ Docker connection failed: Error while fetching server API version: (2, 'CreateFile', '系统找不到指定的文件。')
+2026-01-28 20:16:56 - DockerTest - INFO - [test_docker.py:138] - 
+[Build Image]
+2026-01-28 20:16:56 - DockerTest - INFO - [test_docker.py:29] - Building training image...
+2026-01-28 20:16:56 - DockerTest - ERROR - [test_docker.py:44] - ✗ Image build failed: Error while fetching server API version: (2, 'CreateFile', '系统找不到指定的文件。')
+2026-01-28 20:16:57 - DockerTest - INFO - [test_docker.py:138] - 
+[Container Run]
+2026-01-28 20:16:57 - DockerTest - INFO - [test_docker.py:50] - Testing container run...
+2026-01-28 20:16:57 - DockerTest - ERROR - [test_docker.py:97] - ✗ Container run failed: Error while fetching server API version: (2, 'CreateFile', '系统找不到指定的文件。')
+2026-01-28 20:16:58 - DockerTest - INFO - [test_docker.py:138] - 
+[Log Collection]
+2026-01-28 20:16:58 - DockerTest - INFO - [test_docker.py:103] - Testing log collection...
+2026-01-28 20:16:58 - DockerTest - INFO - [test_docker.py:114] - ✓ Found 2 log files:
+2026-01-28 20:16:58 - DockerTest - INFO - [test_docker.py:116] -   - DockerTest_20260128.log
+2026-01-28 20:16:58 - DockerTest - INFO - [test_docker.py:116] -   - TestLogger_20260128.log
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:144] - 
+============================================================
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:145] - Test Results Summary
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:146] - ============================================================
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:153] - ✗ FAIL: Docker Connection
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:153] - ✗ FAIL: Build Image
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:153] - ✗ FAIL: Container Run
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:153] - ✓ PASS: Log Collection
+2026-01-28 20:16:59 - DockerTest - INFO - [test_docker.py:155] - 
+Total: 1/4 tests passed
+2026-01-28 20:16:59 - DockerTest - ERROR - [test_docker.py:161] - ✗ Some tests failed
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:177] - ============================================================
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:178] - Docker Test Suite
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:179] - ============================================================
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:190] - 
+[Docker Connection]
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 20:54:14 - DockerTest - INFO - [test_docker.py:20] - ✓ Docker connection successful
+2026-01-28 20:54:15 - DockerTest - INFO - [test_docker.py:190] - 
+[Build Image]
+2026-01-28 20:54:15 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 20:54:15 - DockerTest - INFO - [test_docker.py:54] -   → This may take a few minutes for the first time...
+2026-01-28 20:58:26 - DockerTest - ERROR - [test_docker.py:70] - ✗ Image build failed: The command '/bin/sh -c pip install --no-cache-dir -r requirements.txt' returned a non-zero code: 137
+2026-01-28 20:58:27 - DockerTest - INFO - [test_docker.py:190] - 
+[Container Run]
+2026-01-28 20:58:27 - DockerTest - INFO - [test_docker.py:79] - Testing container run...
+2026-01-28 20:58:27 - DockerTest - ERROR - [test_docker.py:92] - ✗ Container run failed: Image 'ai-training:latest' not found
+2026-01-28 20:58:27 - DockerTest - INFO - [test_docker.py:93] -   → Solution: Run 'docker build -f Dockerfile -t ai-training:latest .' first
+2026-01-28 20:58:28 - DockerTest - INFO - [test_docker.py:190] - 
+[Log Collection]
+2026-01-28 20:58:28 - DockerTest - INFO - [test_docker.py:155] - Testing log collection...
+2026-01-28 20:58:28 - DockerTest - INFO - [test_docker.py:166] - ✓ Found 2 log files:
+2026-01-28 20:58:28 - DockerTest - INFO - [test_docker.py:168] -   - DockerTest_20260128.log
+2026-01-28 20:58:28 - DockerTest - INFO - [test_docker.py:168] -   - TestLogger_20260128.log
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:196] - 
+============================================================
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:197] - Test Results Summary
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:198] - ============================================================
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:205] - ✓ PASS: Docker Connection
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:205] - ✗ FAIL: Build Image
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:205] - ✗ FAIL: Container Run
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:205] - ✓ PASS: Log Collection
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:207] - 
+Total: 2/4 tests passed
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:216] - 
+============================================================
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:217] - Docker Service Issue Detected
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:218] - ============================================================
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:219] - To fix Docker connection issues:
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:220] - 1. Make sure Docker Desktop is installed
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:221] - 2. Start Docker Desktop application
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:222] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:223] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:224] - 5. If still failing, restart Docker Desktop
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:225] - ============================================================
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:226] - Note: You can still test other features without Docker:
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:227] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 20:58:29 - DockerTest - INFO - [test_docker.py:228] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 20:58:29 - DockerTest - ERROR - [test_docker.py:234] - 
+✗ Some tests failed
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:177] - ============================================================
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:178] - Docker Test Suite
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:179] - ============================================================
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:190] - 
+[Docker Connection]
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 21:00:13 - DockerTest - INFO - [test_docker.py:20] - ✓ Docker connection successful
+2026-01-28 21:00:14 - DockerTest - INFO - [test_docker.py:190] - 
+[Build Image]
+2026-01-28 21:00:14 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 21:00:14 - DockerTest - INFO - [test_docker.py:54] -   → This may take a few minutes for the first time...
+2026-01-28 21:21:26 - DockerTest - ERROR - [test_docker.py:70] - ✗ Image build failed: The command '/bin/sh -c pip install --no-cache-dir -r requirements.txt' returned a non-zero code: 137
+2026-01-28 21:21:27 - DockerTest - INFO - [test_docker.py:190] - 
+[Container Run]
+2026-01-28 21:21:27 - DockerTest - INFO - [test_docker.py:79] - Testing container run...
+2026-01-28 21:21:27 - DockerTest - ERROR - [test_docker.py:92] - ✗ Container run failed: Image 'ai-training:latest' not found
+2026-01-28 21:21:27 - DockerTest - INFO - [test_docker.py:93] -   → Solution: Run 'docker build -f Dockerfile -t ai-training:latest .' first
+2026-01-28 21:21:28 - DockerTest - INFO - [test_docker.py:190] - 
+[Log Collection]
+2026-01-28 21:21:28 - DockerTest - INFO - [test_docker.py:155] - Testing log collection...
+2026-01-28 21:21:28 - DockerTest - INFO - [test_docker.py:166] - ✓ Found 2 log files:
+2026-01-28 21:21:28 - DockerTest - INFO - [test_docker.py:168] -   - DockerTest_20260128.log
+2026-01-28 21:21:28 - DockerTest - INFO - [test_docker.py:168] -   - TestLogger_20260128.log
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:196] - 
+============================================================
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:197] - Test Results Summary
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:198] - ============================================================
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:205] - ✓ PASS: Docker Connection
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:205] - ✗ FAIL: Build Image
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:205] - ✗ FAIL: Container Run
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:205] - ✓ PASS: Log Collection
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:207] - 
+Total: 2/4 tests passed
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:216] - 
+============================================================
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:217] - Docker Service Issue Detected
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:218] - ============================================================
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:219] - To fix Docker connection issues:
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:220] - 1. Make sure Docker Desktop is installed
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:221] - 2. Start Docker Desktop application
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:222] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:223] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:224] - 5. If still failing, restart Docker Desktop
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:225] - ============================================================
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:226] - Note: You can still test other features without Docker:
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:227] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 21:21:29 - DockerTest - INFO - [test_docker.py:228] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 21:21:29 - DockerTest - ERROR - [test_docker.py:234] - 
+✗ Some tests failed
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:195] - ============================================================
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:196] - Docker Test Suite
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:197] - ============================================================
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:208] - 
+[Docker Connection]
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 21:21:45 - DockerTest - INFO - [test_docker.py:20] - ✓ Docker connection successful
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:208] - 
+[Build Image]
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:54] -   -> Building image (first time may take 5-10 min)...
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -     Step 1/10 : FROM python:3.10-slim
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> f5d029fe3914
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -     Step 2/10 : WORKDIR /app
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> a9ff2418c1a6
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -     Step 3/10 : RUN apt-get update && apt-get install -y     git     curl     && rm -rf /var/lib/apt/lists/*
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 2f7efa0cf5ca
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -     Step 4/10 : COPY requirements-training.txt /app/requirements.txt
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> f0a5af83f2fe
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -     Step 5/10 : RUN pip install --no-cache-dir -r requirements.txt
+2026-01-28 21:21:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Running in 8daaacc309e3
+2026-01-28 21:21:49 - DockerTest - INFO - [test_docker.py:70] -     Collecting torch==2.1.0
+2026-01-28 21:21:49 - DockerTest - INFO - [test_docker.py:70] -       Downloading torch-2.1.0-cp310-cp310-manylinux1_x86_64.whl (670.2 MB)
+2026-01-28 21:32:28 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 670.2/670.2 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:32:30 - DockerTest - INFO - [test_docker.py:70] -     Collecting numpy==1.24.3
+2026-01-28 21:32:30 - DockerTest - INFO - [test_docker.py:70] -       Downloading numpy-1.24.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+2026-01-28 21:32:46 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 1.1 MB/s eta 0:00:00
+2026-01-28 21:32:46 - DockerTest - INFO - [test_docker.py:70] -     Collecting pandas==2.0.3
+2026-01-28 21:32:46 - DockerTest - INFO - [test_docker.py:70] -       Downloading pandas-2.0.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -     Collecting filelock
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -       Downloading filelock-3.20.3-py3-none-any.whl (16 kB)
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -     Collecting fsspec
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -       Downloading fsspec-2026.1.0-py3-none-any.whl (201 kB)
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 201.8/201.8 kB 2.0 MB/s eta 0:00:00
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cuda-nvrtc-cu12==12.1.105
+2026-01-28 21:32:58 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (23.7 MB)
+2026-01-28 21:33:21 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:33:21 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cufft-cu12==11.0.2.54
+2026-01-28 21:33:21 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl (121.6 MB)
+2026-01-28 21:35:17 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:35:17 - DockerTest - INFO - [test_docker.py:70] -     Collecting networkx
+2026-01-28 21:35:17 - DockerTest - INFO - [test_docker.py:70] -       Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+2026-01-28 21:35:18 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 1.4 MB/s eta 0:00:00
+2026-01-28 21:35:18 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cublas-cu12==12.1.3.1
+2026-01-28 21:35:19 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl (410.6 MB)
+2026-01-28 21:41:50 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:41:51 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-curand-cu12==10.3.2.106
+2026-01-28 21:41:51 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl (56.5 MB)
+2026-01-28 21:42:44 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 1.1 MB/s eta 0:00:00
+2026-01-28 21:42:44 - DockerTest - INFO - [test_docker.py:70] -     Collecting sympy
+2026-01-28 21:42:45 - DockerTest - INFO - [test_docker.py:70] -       Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2026-01-28 21:42:50 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 1.1 MB/s eta 0:00:00
+2026-01-28 21:42:50 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-nccl-cu12==2.18.1
+2026-01-28 21:42:51 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_nccl_cu12-2.18.1-py3-none-manylinux1_x86_64.whl (209.8 MB)
+2026-01-28 21:46:11 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.8/209.8 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:46:11 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cusparse-cu12==12.1.0.106
+2026-01-28 21:46:11 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl (196.0 MB)
+2026-01-28 21:49:18 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 1.0 MB/s eta 0:00:00
+2026-01-28 21:49:18 - DockerTest - INFO - [test_docker.py:70] -     Collecting jinja2
+2026-01-28 21:49:18 - DockerTest - INFO - [test_docker.py:70] -       Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-01-28 21:49:18 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 13.5 MB/s eta 0:00:00
+2026-01-28 21:49:19 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cuda-cupti-cu12==12.1.105
+2026-01-28 21:49:19 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (14.1 MB)
+2026-01-28 21:49:31 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 1.1 MB/s eta 0:00:00
+2026-01-28 21:49:32 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cuda-runtime-cu12==12.1.105
+2026-01-28 21:49:32 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (823 kB)
+2026-01-28 21:49:32 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 1.4 MB/s eta 0:00:00
+2026-01-28 21:49:32 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cudnn-cu12==8.9.2.26
+2026-01-28 21:49:32 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl (731.7 MB)
+2026-01-28 22:01:11 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 1.1 MB/s eta 0:00:00
+2026-01-28 22:01:13 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-cusolver-cu12==11.4.5.107
+2026-01-28 22:01:13 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl (124.2 MB)
+2026-01-28 22:03:10 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 1.0 MB/s eta 0:00:00
+2026-01-28 22:03:11 - DockerTest - INFO - [test_docker.py:70] -     Collecting triton==2.1.0
+2026-01-28 22:03:11 - DockerTest - INFO - [test_docker.py:70] -       Downloading triton-2.1.0-0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89.2 MB)
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.2/89.2 MB 1.0 MB/s eta 0:00:00
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-nvtx-cu12==12.1.105
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (99 kB)
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 8.2 MB/s eta 0:00:00
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -     Collecting typing-extensions
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -       Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 166.7 MB/s eta 0:00:00
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -     Collecting tzdata>=2022.1
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -       Downloading tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+2026-01-28 22:04:36 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.5/348.5 kB 13.0 MB/s eta 0:00:00
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -     Collecting pytz>=2020.1
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -       Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 10.8 MB/s eta 0:00:00
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -     Collecting python-dateutil>=2.8.2
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -       Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 13.5 MB/s eta 0:00:00
+2026-01-28 22:04:37 - DockerTest - INFO - [test_docker.py:70] -     Collecting nvidia-nvjitlink-cu12
+2026-01-28 22:04:38 - DockerTest - INFO - [test_docker.py:70] -       Downloading nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.7 MB)
+2026-01-28 22:05:15 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 1.0 MB/s eta 0:00:00
+2026-01-28 22:05:15 - DockerTest - INFO - [test_docker.py:70] -     Collecting six>=1.5
+2026-01-28 22:05:15 - DockerTest - INFO - [test_docker.py:70] -       Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-01-28 22:05:15 - DockerTest - INFO - [test_docker.py:70] -     Collecting MarkupSafe>=2.0
+2026-01-28 22:05:15 - DockerTest - INFO - [test_docker.py:70] -       Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+2026-01-28 22:05:16 - DockerTest - INFO - [test_docker.py:70] -     Collecting mpmath<1.4,>=1.1.0
+2026-01-28 22:05:16 - DockerTest - INFO - [test_docker.py:70] -       Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2026-01-28 22:05:16 - DockerTest - INFO - [test_docker.py:70] -          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 4.1 MB/s eta 0:00:00
+2026-01-28 22:05:16 - DockerTest - INFO - [test_docker.py:70] -     Installing collected packages: pytz, mpmath, tzdata, typing-extensions, sympy, six, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, MarkupSafe, fsspec, filelock, triton, python-dateutil, nvidia-cusparse-cu12, nvidia-cudnn-cu12, jinja2, pandas, nvidia-cusolver-cu12, torch
+2026-01-28 22:06:01 - DockerTest - INFO - [test_docker.py:70] -     Successfully installed MarkupSafe-3.0.3 filelock-3.20.3 fsspec-2026.1.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.4.2 numpy-1.24.3 nvidia-cublas-cu12-12.1.3.1 nvidia-cuda-cupti-cu12-12.1.105 nvidia-cuda-nvrtc-cu12-12.1.105 nvidia-cuda-runtime-cu12-12.1.105 nvidia-cudnn-cu12-8.9.2.26 nvidia-cufft-cu12-11.0.2.54 nvidia-curand-cu12-10.3.2.106 nvidia-cusolver-cu12-11.4.5.107 nvidia-cusparse-cu12-12.1.0.106 nvidia-nccl-cu12-2.18.1 nvidia-nvjitlink-cu12-12.9.86 nvidia-nvtx-cu12-12.1.105 pandas-2.0.3 python-dateutil-2.9.0.post0 pytz-2025.2 six-1.17.0 sympy-1.14.0 torch-2.1.0 triton-2.1.0 typing-extensions-4.15.0 tzdata-2025.3
+2026-01-28 22:06:01 - DockerTest - INFO - [test_docker.py:70] -     [91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m
+2026-01-28 22:06:02 - DockerTest - INFO - [test_docker.py:70] -     [91m
+[notice] A new release of pip is available: 23.0.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m
+2026-01-28 22:08:54 - DockerTest - INFO - [test_docker.py:70] -      ---> Removed intermediate container 8daaacc309e3
+2026-01-28 22:08:54 - DockerTest - INFO - [test_docker.py:70] -      ---> 01dd88c37f6f
+2026-01-28 22:08:54 - DockerTest - INFO - [test_docker.py:70] -     Step 6/10 : COPY train.py /app/train.py
+2026-01-28 22:08:58 - DockerTest - INFO - [test_docker.py:70] -      ---> 0f7a83507343
+2026-01-28 22:08:58 - DockerTest - INFO - [test_docker.py:70] -     Step 7/10 : RUN mkdir -p /logs
+2026-01-28 22:08:58 - DockerTest - INFO - [test_docker.py:70] -      ---> Running in 4bc6876829ff
+2026-01-28 22:09:02 - DockerTest - INFO - [test_docker.py:70] -      ---> Removed intermediate container 4bc6876829ff
+2026-01-28 22:09:02 - DockerTest - INFO - [test_docker.py:70] -      ---> 87ceb2a02fa9
+2026-01-28 22:09:02 - DockerTest - INFO - [test_docker.py:70] -     Step 8/10 : ENV PYTHONUNBUFFERED=1
+2026-01-28 22:09:02 - DockerTest - INFO - [test_docker.py:70] -      ---> Running in cc0e079e3dd8
+2026-01-28 22:09:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Removed intermediate container cc0e079e3dd8
+2026-01-28 22:09:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 3d3245a02508
+2026-01-28 22:09:06 - DockerTest - INFO - [test_docker.py:70] -     Step 9/10 : ENV PYTHONPATH=/app
+2026-01-28 22:09:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Running in 4a349961b598
+2026-01-28 22:09:09 - DockerTest - INFO - [test_docker.py:70] -      ---> Removed intermediate container 4a349961b598
+2026-01-28 22:09:09 - DockerTest - INFO - [test_docker.py:70] -      ---> 6b11ff237506
+2026-01-28 22:09:09 - DockerTest - INFO - [test_docker.py:70] -     Step 10/10 : CMD ["python", "train.py", "--epochs", "5"]
+2026-01-28 22:09:10 - DockerTest - INFO - [test_docker.py:70] -      ---> Running in 95407e4c1f79
+2026-01-28 22:09:13 - DockerTest - INFO - [test_docker.py:70] -      ---> Removed intermediate container 95407e4c1f79
+2026-01-28 22:09:13 - DockerTest - INFO - [test_docker.py:70] -      ---> eb5489839908
+2026-01-28 22:09:13 - DockerTest - INFO - [test_docker.py:70] -     Successfully built eb5489839908
+2026-01-28 22:09:13 - DockerTest - INFO - [test_docker.py:70] -     Successfully tagged ai-training:latest
+2026-01-28 22:09:13 - DockerTest - INFO - [test_docker.py:80] -   -> Image built successfully: sha256:eb548
+2026-01-28 22:09:14 - DockerTest - INFO - [test_docker.py:208] - 
+[Container Run]
+2026-01-28 22:09:14 - DockerTest - INFO - [test_docker.py:97] - Testing container run...
+2026-01-28 22:09:14 - DockerTest - ERROR - [test_docker.py:164] - ✗ Container run failed: 400 Client Error for http+docker://localnpipe/v1.52/containers/817f99f694643ebe090905304524dc84babf1e72b7b22bee54c5722477e2949d/start: Bad Request ("failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "--epochs": executable file not found in $PATH")
+2026-01-28 22:09:15 - DockerTest - INFO - [test_docker.py:208] - 
+[Log Collection]
+2026-01-28 22:09:15 - DockerTest - INFO - [test_docker.py:173] - Testing log collection...
+2026-01-28 22:09:15 - DockerTest - INFO - [test_docker.py:184] - ✓ Found 2 log files:
+2026-01-28 22:09:15 - DockerTest - INFO - [test_docker.py:186] -   - DockerTest_20260128.log
+2026-01-28 22:09:15 - DockerTest - INFO - [test_docker.py:186] -   - TestLogger_20260128.log
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:214] - 
+============================================================
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:215] - Test Results Summary
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:216] - ============================================================
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Docker Connection
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Build Image
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:223] - ✗ FAIL: Container Run
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Log Collection
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:225] - 
+Total: 3/4 tests passed
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:234] - 
+============================================================
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:235] - Docker Service Issue Detected
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:236] - ============================================================
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:237] - To fix Docker connection issues:
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:238] - 1. Make sure Docker Desktop is installed
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:239] - 2. Start Docker Desktop application
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:240] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:241] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:242] - 5. If still failing, restart Docker Desktop
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:243] - ============================================================
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:244] - Note: You can still test other features without Docker:
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:245] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 22:09:16 - DockerTest - INFO - [test_docker.py:246] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 22:09:16 - DockerTest - ERROR - [test_docker.py:252] - 
+✗ Some tests failed
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:195] - ============================================================
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:196] - Docker Test Suite
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:197] - ============================================================
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:208] - 
+[Docker Connection]
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 22:38:05 - DockerTest - INFO - [test_docker.py:20] - ✓ Docker connection successful
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:208] - 
+[Build Image]
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:54] -   -> Building image (first time may take 5-10 min)...
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 1/10 : FROM python:3.10-slim
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> f5d029fe3914
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 2/10 : WORKDIR /app
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> a9ff2418c1a6
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 3/10 : RUN apt-get update && apt-get install -y     git     curl     && rm -rf /var/lib/apt/lists/*
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 2f7efa0cf5ca
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 4/10 : COPY requirements-training.txt /app/requirements.txt
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> f0a5af83f2fe
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 5/10 : RUN pip install --no-cache-dir -r requirements.txt
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 01dd88c37f6f
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 6/10 : COPY train.py /app/train.py
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 0f7a83507343
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 7/10 : RUN mkdir -p /logs
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 87ceb2a02fa9
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 8/10 : ENV PYTHONUNBUFFERED=1
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 3d3245a02508
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 9/10 : ENV PYTHONPATH=/app
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> 6b11ff237506
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Step 10/10 : CMD ["python", "train.py", "--epochs", "5"]
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -      ---> eb5489839908
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Successfully built eb5489839908
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:70] -     Successfully tagged ai-training:latest
+2026-01-28 22:38:06 - DockerTest - INFO - [test_docker.py:80] -   -> Image built successfully: sha256:eb548
+2026-01-28 22:38:07 - DockerTest - INFO - [test_docker.py:208] - 
+[Container Run]
+2026-01-28 22:38:07 - DockerTest - INFO - [test_docker.py:97] - Testing container run...
+2026-01-28 22:38:07 - DockerTest - ERROR - [test_docker.py:164] - ✗ Container run failed: 400 Client Error for http+docker://localnpipe/v1.52/containers/239297d1d8eeeacfff4293bfd9b6a5afdaf72604d0177050010eaafc939357b6/start: Bad Request ("failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "--epochs": executable file not found in $PATH")
+2026-01-28 22:38:08 - DockerTest - INFO - [test_docker.py:208] - 
+[Log Collection]
+2026-01-28 22:38:08 - DockerTest - INFO - [test_docker.py:173] - Testing log collection...
+2026-01-28 22:38:08 - DockerTest - INFO - [test_docker.py:184] - ✓ Found 2 log files:
+2026-01-28 22:38:08 - DockerTest - INFO - [test_docker.py:186] -   - DockerTest_20260128.log
+2026-01-28 22:38:08 - DockerTest - INFO - [test_docker.py:186] -   - TestLogger_20260128.log
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:214] - 
+============================================================
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:215] - Test Results Summary
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:216] - ============================================================
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Docker Connection
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Build Image
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:223] - ✗ FAIL: Container Run
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Log Collection
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:225] - 
+Total: 3/4 tests passed
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:234] - 
+============================================================
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:235] - Docker Service Issue Detected
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:236] - ============================================================
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:237] - To fix Docker connection issues:
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:238] - 1. Make sure Docker Desktop is installed
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:239] - 2. Start Docker Desktop application
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:240] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:241] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:242] - 5. If still failing, restart Docker Desktop
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:243] - ============================================================
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:244] - Note: You can still test other features without Docker:
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:245] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 22:38:09 - DockerTest - INFO - [test_docker.py:246] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 22:38:09 - DockerTest - ERROR - [test_docker.py:252] - 
+✗ Some tests failed
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:195] - ============================================================
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:196] - Docker Test Suite
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:197] - ============================================================
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:208] - 
+[Docker Connection]
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 22:39:44 - DockerTest - INFO - [test_docker.py:20] - ✓ Docker connection successful
+2026-01-28 22:39:45 - DockerTest - INFO - [test_docker.py:208] - 
+[Build Image]
+2026-01-28 22:39:45 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 22:39:45 - DockerTest - INFO - [test_docker.py:54] -   -> Building image (first time may take 5-10 min)...
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 1/10 : FROM python:3.10-slim
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> f5d029fe3914
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 2/10 : WORKDIR /app
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> a9ff2418c1a6
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 3/10 : RUN apt-get update && apt-get install -y     git     curl     && rm -rf /var/lib/apt/lists/*
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 2f7efa0cf5ca
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 4/10 : COPY requirements-training.txt /app/requirements.txt
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> f0a5af83f2fe
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 5/10 : RUN pip install --no-cache-dir -r requirements.txt
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 01dd88c37f6f
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 6/10 : COPY train.py /app/train.py
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 0f7a83507343
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 7/10 : RUN mkdir -p /logs
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 87ceb2a02fa9
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 8/10 : ENV PYTHONUNBUFFERED=1
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 3d3245a02508
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 9/10 : ENV PYTHONPATH=/app
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> 6b11ff237506
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Step 10/10 : CMD ["python", "train.py", "--epochs", "5"]
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> Using cache
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -      ---> eb5489839908
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Successfully built eb5489839908
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:70] -     Successfully tagged ai-training:latest
+2026-01-28 22:39:46 - DockerTest - INFO - [test_docker.py:80] -   -> Image built successfully: sha256:eb548
+2026-01-28 22:39:47 - DockerTest - INFO - [test_docker.py:208] - 
+[Container Run]
+2026-01-28 22:39:47 - DockerTest - INFO - [test_docker.py:97] - Testing container run...
+2026-01-28 22:39:47 - DockerTest - ERROR - [test_docker.py:164] - ✗ Container run failed: 400 Client Error for http+docker://localnpipe/v1.52/containers/4b144dc39375c687d0a5c67d01b14395cb492a160c817fb2978405e75fc5596e/start: Bad Request ("failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "--epochs": executable file not found in $PATH")
+2026-01-28 22:39:48 - DockerTest - INFO - [test_docker.py:208] - 
+[Log Collection]
+2026-01-28 22:39:48 - DockerTest - INFO - [test_docker.py:173] - Testing log collection...
+2026-01-28 22:39:48 - DockerTest - INFO - [test_docker.py:184] - ✓ Found 2 log files:
+2026-01-28 22:39:48 - DockerTest - INFO - [test_docker.py:186] -   - DockerTest_20260128.log
+2026-01-28 22:39:48 - DockerTest - INFO - [test_docker.py:186] -   - TestLogger_20260128.log
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:214] - 
+============================================================
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:215] - Test Results Summary
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:216] - ============================================================
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Docker Connection
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Build Image
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:223] - ✗ FAIL: Container Run
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:223] - ✓ PASS: Log Collection
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:225] - 
+Total: 3/4 tests passed
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:234] - 
+============================================================
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:235] - Docker Service Issue Detected
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:236] - ============================================================
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:237] - To fix Docker connection issues:
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:238] - 1. Make sure Docker Desktop is installed
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:239] - 2. Start Docker Desktop application
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:240] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:241] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:242] - 5. If still failing, restart Docker Desktop
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:243] - ============================================================
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:244] - Note: You can still test other features without Docker:
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:245] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 22:39:49 - DockerTest - INFO - [test_docker.py:246] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 22:39:49 - DockerTest - ERROR - [test_docker.py:252] - 
+✗ Some tests failed
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:206] - ============================================================
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:207] - Docker Test Suite
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:208] - ============================================================
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:219] - 
+[Docker Connection]
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 23:19:58 - DockerTest - INFO - [test_docker.py:20] - [OK] Docker connection successful
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:219] - 
+[Build Image]
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:54] -   -> Building image (first time may take 5-10 min)...
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 1/10 : FROM python:3.10-slim
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> f5d029fe3914
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 2/10 : WORKDIR /app
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> a9ff2418c1a6
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 3/10 : RUN apt-get update && apt-get install -y     git     curl     && rm -rf /var/lib/apt/lists/*
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 2f7efa0cf5ca
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 4/10 : COPY requirements-training.txt /app/requirements.txt
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> f0a5af83f2fe
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 5/10 : RUN pip install --no-cache-dir -r requirements.txt
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 01dd88c37f6f
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 6/10 : COPY train.py /app/train.py
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 0f7a83507343
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 7/10 : RUN mkdir -p /logs
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 87ceb2a02fa9
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 8/10 : ENV PYTHONUNBUFFERED=1
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 3d3245a02508
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 9/10 : ENV PYTHONPATH=/app
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> 6b11ff237506
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Step 10/10 : CMD ["python", "train.py", "--epochs", "5"]
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -      ---> eb5489839908
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Successfully built eb5489839908
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:72] -     Successfully tagged ai-training:latest
+2026-01-28 23:19:59 - DockerTest - INFO - [test_docker.py:88] -   -> Image built successfully: sha256:eb548
+2026-01-28 23:20:00 - DockerTest - INFO - [test_docker.py:219] - 
+[Container Run]
+2026-01-28 23:20:00 - DockerTest - INFO - [test_docker.py:105] - Testing container run...
+2026-01-28 23:20:01 - DockerTest - ERROR - [test_docker.py:175] - [FAIL] Container run failed: 400 Client Error for http+docker://localnpipe/v1.52/containers/394395307e558036fa6df22693f0124a3516e8fd880163f30c09c572d73f445a/start: Bad Request ("failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "--epochs": executable file not found in $PATH")
+2026-01-28 23:20:02 - DockerTest - INFO - [test_docker.py:219] - 
+[Log Collection]
+2026-01-28 23:20:02 - DockerTest - INFO - [test_docker.py:184] - Testing log collection...
+2026-01-28 23:20:02 - DockerTest - INFO - [test_docker.py:195] - [OK] Found 2 log files:
+2026-01-28 23:20:02 - DockerTest - INFO - [test_docker.py:197] -   - DockerTest_20260128.log
+2026-01-28 23:20:02 - DockerTest - INFO - [test_docker.py:197] -   - TestLogger_20260128.log
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:225] - 
+============================================================
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:226] - Test Results Summary
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:227] - ============================================================
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Docker Connection
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Build Image
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:234] - [FAIL]: Container Run
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Log Collection
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:236] - 
+Total: 3/4 tests passed
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:245] - 
+============================================================
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:246] - Docker Service Issue Detected
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:247] - ============================================================
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:248] - To fix Docker connection issues:
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:249] - 1. Make sure Docker Desktop is installed
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:250] - 2. Start Docker Desktop application
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:251] - 3. Wait for Docker to fully start (whale icon in system tray)
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:252] - 4. Verify: Open terminal and run 'docker ps'
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:253] - 5. If still failing, restart Docker Desktop
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:254] - ============================================================
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:255] - Note: You can still test other features without Docker:
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:256] -   → Run 'python quick_test.py' for basic functionality test
+2026-01-28 23:20:03 - DockerTest - INFO - [test_docker.py:257] -   → Run 'python -m uvicorn app:app' to start API (without Docker tasks)
+2026-01-28 23:20:03 - DockerTest - ERROR - [test_docker.py:263] - 
+[FAIL] Some tests failed
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:206] - ============================================================
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:207] - Docker Test Suite
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:208] - ============================================================
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:219] - 
+[Docker Connection]
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:16] - Testing Docker connection...
+2026-01-28 23:22:37 - DockerTest - INFO - [test_docker.py:20] - [OK] Docker connection successful
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:219] - 
+[Build Image]
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:41] - Building training image...
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:54] -   -> Building image (first time may take 5-10 min)...
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 1/10 : FROM python:3.10-slim
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> f5d029fe3914
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 2/10 : WORKDIR /app
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> a9ff2418c1a6
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 3/10 : RUN apt-get update && apt-get install -y     git     curl     && rm -rf /var/lib/apt/lists/*
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 2f7efa0cf5ca
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 4/10 : COPY requirements-training.txt /app/requirements.txt
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> f0a5af83f2fe
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 5/10 : RUN pip install --no-cache-dir -r requirements.txt
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 01dd88c37f6f
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 6/10 : COPY train.py /app/train.py
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 0f7a83507343
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 7/10 : RUN mkdir -p /logs
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 87ceb2a02fa9
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 8/10 : ENV PYTHONUNBUFFERED=1
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 3d3245a02508
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 9/10 : ENV PYTHONPATH=/app
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> 6b11ff237506
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Step 10/10 : CMD ["python", "train.py", "--epochs", "5"]
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> Using cache
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -      ---> eb5489839908
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Successfully built eb5489839908
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:72] -     Successfully tagged ai-training:latest
+2026-01-28 23:22:38 - DockerTest - INFO - [test_docker.py:88] -   -> Image built successfully: sha256:eb548
+2026-01-28 23:22:39 - DockerTest - INFO - [test_docker.py:219] - 
+[Container Run]
+2026-01-28 23:22:39 - DockerTest - INFO - [test_docker.py:105] - Testing container run...
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:143] - [OK] Container started: f4d9b3a6c07c
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:146] - Container logs:
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,409 - INFO - ============================================================
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,410 - INFO - AI Training Started
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,410 - INFO - Epochs: 2
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,410 - INFO - Batch Size: 16
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,410 - INFO - Learning Rate: 0.001
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,410 - INFO - ============================================================
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,411 - INFO - Epoch 1/2 started
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,411 - INFO - Epoch 1/2, Step 1/10 - Loss: 1.1000, Accuracy: 0.6100
+2026-01-28 23:22:40 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:40,911 - INFO - Epoch 1/2, Step 2/10 - Loss: 0.6000, Accuracy: 0.6200
+2026-01-28 23:22:41 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:41,412 - INFO - Epoch 1/2, Step 3/10 - Loss: 0.4333, Accuracy: 0.6300
+2026-01-28 23:22:41 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:41,913 - INFO - Epoch 1/2, Step 4/10 - Loss: 0.3500, Accuracy: 0.6400
+2026-01-28 23:22:42 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:42,414 - INFO - Epoch 1/2, Step 5/10 - Loss: 0.3000, Accuracy: 0.6500
+2026-01-28 23:22:42 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:42,914 - INFO - Epoch 1/2, Step 6/10 - Loss: 0.2667, Accuracy: 0.6600
+2026-01-28 23:22:43 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:43,415 - INFO - Epoch 1/2, Step 7/10 - Loss: 0.2429, Accuracy: 0.6700
+2026-01-28 23:22:43 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:43,916 - INFO - Epoch 1/2, Step 8/10 - Loss: 0.2250, Accuracy: 0.6800
+2026-01-28 23:22:44 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:44,417 - INFO - Epoch 1/2, Step 9/10 - Loss: 0.2111, Accuracy: 0.6900
+2026-01-28 23:22:44 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:44,918 - INFO - Epoch 1/2, Step 10/10 - Loss: 0.2000, Accuracy: 0.7000
+2026-01-28 23:22:45 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:45,418 - INFO - Epoch 1/2 completed
+2026-01-28 23:22:45 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:45,421 - INFO - Checkpoint saved: /logs/checkpoint_epoch_1.pth
+2026-01-28 23:22:45 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:45,421 - INFO - Epoch 2/2 started
+2026-01-28 23:22:45 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:45,421 - INFO - Epoch 2/2, Step 1/10 - Loss: 0.6000, Accuracy: 0.7100
+2026-01-28 23:22:45 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:45,922 - INFO - Epoch 2/2, Step 2/10 - Loss: 0.3500, Accuracy: 0.7200
+2026-01-28 23:22:46 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:46,423 - INFO - Epoch 2/2, Step 3/10 - Loss: 0.2667, Accuracy: 0.7300
+2026-01-28 23:22:46 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:46,923 - INFO - Epoch 2/2, Step 4/10 - Loss: 0.2250, Accuracy: 0.7400
+2026-01-28 23:22:47 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:47,424 - INFO - Epoch 2/2, Step 5/10 - Loss: 0.2000, Accuracy: 0.7500
+2026-01-28 23:22:47 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:47,925 - INFO - Epoch 2/2, Step 6/10 - Loss: 0.1833, Accuracy: 0.7600
+2026-01-28 23:22:48 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:48,426 - INFO - Epoch 2/2, Step 7/10 - Loss: 0.1714, Accuracy: 0.7700
+2026-01-28 23:22:48 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:48,926 - INFO - Epoch 2/2, Step 8/10 - Loss: 0.1625, Accuracy: 0.7800
+2026-01-28 23:22:49 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:49,427 - INFO - Epoch 2/2, Step 9/10 - Loss: 0.1556, Accuracy: 0.7900
+2026-01-28 23:22:49 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:49,928 - INFO - Epoch 2/2, Step 10/10 - Loss: 0.1500, Accuracy: 0.8000
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,429 - INFO - Epoch 2/2 completed
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,431 - INFO - Checkpoint saved: /logs/checkpoint_epoch_2.pth
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,431 - INFO - ============================================================
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,431 - INFO - Training Completed Successfully
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,431 - INFO - ============================================================
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:151] -   2026-01-28 15:22:50,433 - INFO - Training result saved: /logs/training_result.txt
+2026-01-28 23:22:50 - DockerTest - INFO - [test_docker.py:160] - [OK] Container completed successfully
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:219] - 
+[Log Collection]
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:184] - Testing log collection...
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:195] - [OK] Found 3 log files:
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:197] -   - DockerTest_20260128.log
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:197] -   - TestLogger_20260128.log
+2026-01-28 23:22:51 - DockerTest - INFO - [test_docker.py:197] -   - training_result.txt
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:225] - 
+============================================================
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:226] - Test Results Summary
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:227] - ============================================================
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Docker Connection
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Build Image
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Container Run
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:234] - [PASS]: Log Collection
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:236] - 
+Total: 4/4 tests passed
+2026-01-28 23:22:52 - DockerTest - INFO - [test_docker.py:260] - 
+[OK] All tests passed!
